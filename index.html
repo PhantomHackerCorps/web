@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Phantom Hacker Corps</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="cyber-bg"></div>
+    <div class="grid-overlay"></div>
+    <div class="particles" id="particles"></div>
+    
+    <header>
+        <div class="profiles-container">
+            <div class="profile-container">
+                <div class="profile-glow caporal-glow"></div>
+                <img src="https://i.pinimg.com/736x/d4/13/61/d4136120abefa9699fc272ead7d54fb3.jpg" alt="Caporal" class="profile caporal-profile">
+                <div class="profile-name caporal-name">CAPORAL</div>
+            </div>
+            
+            <div class="profile-container">
+                <div class="profile-glow fluke-glow"></div>
+                <img src="https://i.pinimg.com/736x/d0/b4/95/d0b49520fffbffb9d215cd1ec53d4f1b.jpg" alt="Fluke" class="profile fluke-profile">
+                <div class="profile-name fluke-name">✂Fxckin.fluke.exe💣</div>
+            </div>
+            
+            <div class="profile-container">
+                <div class="profile-glow princessa-glow"></div>
+                <img src="https://i.pinimg.com/736x/1e/c3/6b/1ec36b5cea6af3dafb48697291e127b7.jpg" alt="Princesa" class="profile princessa-profile">
+                <div class="profile-name princessa-name">Принцесса Сеть</div>
+            </div>
+        </div>
+        
+        <h1 class="glitch">Phantom Hacker Corps</h1>
+        <p class="tagline">// Servicios de hacking avanzado </p>
+    </header>
+    
+    <div class="container">
+        <div class="terminal">
+            <div class="terminal-line"><span class="prompt">root@phantom:~$</span> Iniciando sistemas de ataque...</div>
+            <div class="terminal-line"><span class="prompt">root@phantom:~$</span> Cargando exploits...</div>
+            <div class="terminal-line"><span class="prompt">root@phantom:~$</span> Conexión anónima establecida <span class="cyber-loader"></span></div>
+            <div class="terminal-line"><span class="prompt">root@phantom:~$</span> Verificando credenciales...</div>
+            <div class="terminal-line"><span class="prompt">root@phantom:~$</span> Acceso concedido. Bienvenido, operativo.</div>
+            <div class="terminal-line"><span class="prompt">root@phantom:~$</span> <span id="typing"></span><span class="prompt blink">_</span></div>
+        </div>
+        
+        <h2 style="color: var(--accent-blue); text-align: center; margin-top: 20px; text-shadow: 0 0 10px var(--accent-blue);">OPERACIONES DISPONIBLES</h2>
+        
+        <div class="services">
+            <div class="service-card" onclick="showDetails('osint')">
+                <h3><span style="color: var(--primary-blue);">OSINT</span> RECONOCIMIENTO</h3>
+                <p>Extracción de inteligencia de fuentes abiertas. Identificación de vulnerabilidades públicas, análisis de huellas digitales y recolección de metadatos. Obtención de información crítica para operaciones.</p>
+                <button class="btn">CONTRATAR</button>
+            </div>
+            
+            <div class="service-card" onclick="showDetails('phishing')">
+                <h3><span style="color: var(--accent-blue);">PHISHING</span> OFENSIVO</h3>
+                <p>Operaciones de ingeniería social avanzada. Campañas personalizadas para obtención de credenciales, inyección de malware y acceso no autorizado a sistemas objetivo.</p>
+                <button class="btn">CONTRATAR</button>
+            </div>
+            
+            <div class="service-card" onclick="showDetails('ransomware')">
+                <h3><span style="color: var(--matrix-yellow);">RANSOMWARE</span> OFENSIVO</h3>
+                <p>Desarrollo e implementación de ataques de cifrado. Infección de sistemas, exfiltración de datos y negociación de rescates. Tácticas avanzadas de evasión.</p>
+                <button class="btn">CONTRATAR</button>
+            </div>
+            
+            <div class="service-card" onclick="showDetails('pentest')">
+                <h3><span style="color: var(--primary-blue);">EXPLOIT</span> DEVELOPMENT</h3>
+                <p>Creación de exploits personalizados para vulnerabilidades 0-day y conocidas. Técnicas de escalamiento de privilegios y movimiento lateral en redes comprometidas.</p>
+                <button class="btn">CONTRATAR</button>
+            </div>
+            
+            <div class="service-card" onclick="showDetails('ddos')">
+                <h3><span style="color: var(--accent-blue);">DDoS</span> OFENSIVO</h3>
+                <p>Ataques de denegación de servicio distribuido. Sobrecarga de infraestructuras objetivo con tráfico masivo. Técnicas de amplificación y evasión de mitigaciones.</p>
+                <button class="btn">CONTRATAR</button>
+            </div>
+        </div>
+        
+        <div id="service-details" class="hidden">
+            <h2 id="detail-title" style="color: var(--primary-blue); text-align: center;"></h2>
+            <p id="detail-description" style="color: var(--light-gray); line-height: 1.6; font-size: 0.9em;"></p>
+            <div id="access-denied" class="access-denied hidden">
+                <p>¡ACCESO DENEGADO!</p>
+                <p>Nivel de autorización insuficiente</p>
+                <p>Contacta para actualizar tus credenciales</p>
+            </div>
+            <button onclick="hideDetails()" class="btn" style="position: relative; margin: 20px auto; display: block;">VOLVER</button>
+        </div>
+    </div>
+    
+    <div class="contact">
+        <p>CONTACTO SEGURO <span style="color: var(--accent-blue);">(CIFRADO DE EXTREMO A EXTREMO)</span></p>
+        <div class="contact-links">
+            <a href="mailto:phantomcorps.contacto@gmail.com" class="contact-link">CORREO: phantomcorps.contacto@gmail.com</a>
+        </div>
+    </div>
+    
+    <script src="js/particles.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
